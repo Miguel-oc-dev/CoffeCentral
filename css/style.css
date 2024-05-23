@@ -1,0 +1,170 @@
+/*Configuraciones globales*/
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos:'Open Sans', sans-serif;
+    
+    --tono1: #606C38;
+    --tono2: #283618;
+    --tono3: #FEFAE0;
+    --tono4: #DDA15E;
+    --tono5: #BC6C25;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--tono3);
+}
+
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading); 
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/*Header*/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--tono3);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px){
+    .header_texto{
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 768PX){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: var(--tono3);
+}
+
+.logo_nombre{
+    font-weight: 400;
+}
+
+.logo_bold{
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap:2rem
+    }
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--tono3);
+}
+
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--tono2);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border:none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--tono3);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }    
+}
+
+.boton-primario{
+    background-color: var(--tono2);
+}
