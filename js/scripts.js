@@ -1,35 +1,35 @@
 // querySelector
-const heading = document.querySelector('.header_texto h2') // 0 a 1 elementos
-heading.textContent = 'Nuevo Heading';
-console.log(heading);
+// const heading = document.querySelector('.header_texto h2') // 0 a 1 elementos
+// heading.textContent = 'Nuevo Heading';
+// console.log(heading);
 
 
-// querySelectorAll
-const enlaces = document.querySelectorAll('.navegacion a');
-enlaces[0].textContent = 'Nuevo Texto para enlace';
-enlaces[1].classList.add('nueva-clase');
-//enlaces[2].classList.remove('navegacion_enlace');
+// // querySelectorAll
+// const enlaces = document.querySelectorAll('.navegacion a');
+// enlaces[0].textContent = 'Nuevo Texto para enlace';
+// enlaces[1].classList.add('nueva-clase');
+// //enlaces[2].classList.remove('navegacion_enlace');
 
 
 
-// generar un nuevo enlace
-const nuevoEnlace = document.createElement('A')
+// // generar un nuevo enlace
+// const nuevoEnlace = document.createElement('A')
 
-// Agregar href
-nuevoEnlace.href = 'nuevo-enlace.html';
+// // Agregar href
+// nuevoEnlace.href = 'nuevo-enlace.html';
 
-// Agregar el texto
-nuevoEnlace.textContent = 'Un nuevo enlace';
+// // Agregar el texto
+// nuevoEnlace.textContent = 'Un nuevo enlace';
 
-// Agregar la clase
-nuevoEnlace.classList.add('navegacion_enlace');
+// // Agregar la clase
+// nuevoEnlace.classList.add('navegacion_enlace');
 
-// Agregarlo al documento
-const navegacion = document.querySelector('.navegacion');
-navegacion.appendChild(nuevoEnlace);
+// // Agregarlo al documento
+// const navegacion = document.querySelector('.navegacion');
+// navegacion.appendChild(nuevoEnlace);
 
 
-console.log(nuevoEnlace);
+// console.log(nuevoEnlace);
 
 // Eventos
 // console.log(1);
